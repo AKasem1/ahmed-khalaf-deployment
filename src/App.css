@@ -204,6 +204,7 @@
 }
 
 .firstName, .secondName {
+  font-weight: bold;
   font-size: 90px;
   font-family: 'Rubik', sans-serif;
   animation-name: name-animation;
