@@ -25,6 +25,13 @@ const Home = () => {
           color: '#25a9cb'
         },
         {
+            title: 'الصف الثاني الإعدادي',
+            subtitle: 'حكومي - لغات',
+            description: '04',
+            Component: "https://i.ibb.co/zPQSCJq/2prep.jpg",
+            color: '#25a9cb'
+          },
+        {
           title: 'الصف الثالث الإعدادي',
           subtitle: 'حكومي - لغات',
           description: '05',
