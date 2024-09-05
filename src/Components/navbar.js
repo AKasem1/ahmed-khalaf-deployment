@@ -20,7 +20,7 @@ export const Navbar = () => {
         </RouterLink>
       </div>
       <nav className="nav">
-        <ScrollLink to="footer" smooth={true} duration={500} className='link'>
+        {/* <ScrollLink to="footer" smooth={true} duration={500} className='link'>
           تواصل معنا
         </ScrollLink>
         <ScrollLink to="aboutus" smooth={true} duration={500} className='link'>
@@ -34,7 +34,7 @@ export const Navbar = () => {
         </ScrollLink>
         <ScrollLink to="home" smooth={true} duration={500} className='link'>
           الرئيسية
-        </ScrollLink>
+        </ScrollLink> */}
       </nav>
 
       <div className="menu-icon" onClick={toggleSidebar}>

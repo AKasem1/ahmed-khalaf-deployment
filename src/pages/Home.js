@@ -13,6 +13,7 @@ import { PiNumberCircleFourFill, PiNumberCircleFiveFill, PiNumberCircleSixFill }
 import PricingPackage from '../Components/Pricing Package';
 import GradeCard from '../Components/GradeCard';
 import WaveAnimation from '../Components/WaveAnimation';
+import Features from '../Components/Features';
 
 const Home = () => {
     const [selectedGrade, setSelectedGrade] = useState('');
@@ -72,7 +73,7 @@ const Home = () => {
         <div className="landing-page">
             <Element name="home" className="home-section">
                 <div className="home-content">
-                    <MinusAnimation />
+                    {/* <MinusAnimation /> */}
                     <DivideAnimation />
                     <MultiplyAnimation />
                     <UnequalAnimation />
@@ -105,20 +106,17 @@ const Home = () => {
             ))}
             </div>
             </Element>
-            <div className="separator">
+            {/* <div className="separator">
                 <WaveAnimation />
-            </div>
-            <Element name="aboutus" className="about-section">
-                {/* <WhyUs /> */}
-                <Cards />
-                {/* <Arrow /> */}
-                {/* <NotesAnimation /> */}
+            </div> */}
+            <Element name="aboutus" className="features">
+                <Features />
             </Element>
             <div className="separator">
                 <WaveAnimation />
             </div>
             <Element className="pricing-section" name='courses'>
-            {selectedGrade && (<PricingPackage grade={selectedGrade} price="180 ج.م / شهر" details={pricingDetails} />)}
+            {/* {selectedGrade && (<PricingPackage grade={selectedGrade} price="180 ج.م / شهر" details={pricingDetails} />)} */}
             </Element>
             
         </div>

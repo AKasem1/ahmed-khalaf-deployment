@@ -78,11 +78,10 @@
     background: #0a0061;
     margin: 20px 0;
 }
-/* Media Query for small screens */
 @media screen and (max-width: 768px) {
     .landing-page {
       position: relative;
-      padding: 0 10px; /* Adjust padding for small screens */
+      padding: 0 10px;
     }
   
     .home-content {

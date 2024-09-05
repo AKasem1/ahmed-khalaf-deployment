@@ -308,7 +308,7 @@
 .firstName, .secondName {
   font-weight: bold;
   font-size: 100px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'DG-Ghayaty', sans-serif;
   animation-name: name-animation;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -870,7 +870,7 @@ button {
 }
 
 .card {
-  width: 200px;
+  width: 300px;
 
 }
 
@@ -1025,9 +1025,6 @@ button {
     text-align: center;
   }
 
-  .firstName, .secondName {
-    font-size: 40px; /* Smaller font size for names */
-  }
 
   .separator {
     height: 2px; /* Thinner separator */
@@ -1047,4 +1044,5 @@ button {
     height: 35px; /* Smaller social media icons */
   }
 }
+
 
