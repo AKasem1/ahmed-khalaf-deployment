@@ -132,6 +132,108 @@
     background: #000000;
     color: #ffffff;
 }
+.sidebar {
+  position: fixed;
+  right: -300px; /* Initially hidden off-screen */
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: #ffffff; /* Lighter background for better contrast */
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 60px;
+  transition: right 0.4s ease; 
+  z-index: 2000;
+}
+
+.sidebar.active {
+  right: 0; /* Slide in the sidebar */
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #3b5998; /* Match your theme's primary color */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #3b5998;
+}
+
+.sidebar-button {
+  background-color: #3b5998; /* Primary color from your theme */
+  border: none;
+  border-radius: 25px; /* Rounded button style for modern look */
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for hover effects */
+}
+
+.sidebar-button:hover {
+  background-color: #3b5998; /* Slightly lighter shade on hover */
+  transform: translateY(-3px); /* Subtle lift on hover */
+}
+
+.arrow-wrapper {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+}
+
+.sidebar-logo{
+  width: 240px;
+  height: 100px;
+}
+
+.sidebar hr {
+  width: 80%;
+  border: none;
+  border-top: 1px solid #eaeaea;
+  margin: 20px 0;
+}
+
+.sidebar h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.menu-icon {
+  color: #3b5998;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+}
+
 
 
 .home-content {
@@ -291,10 +393,6 @@ button {
   
   button:hover {
     background-color: var(--hover-color);
-  }
-  
-  button:hover .arrow {
-    background: var(--secondary-color);
   }
   
   button:hover .arrow:before {
