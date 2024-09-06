@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom'; 
-import { Link as ScrollLink } from 'react-scroll';
 import logo from '../assets/logo.png';
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 export const Navbar = () => {
+  const location = useLocation();
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const dispatch = useDispatch();
 
@@ -16,7 +16,7 @@ export const Navbar = () => {
     <header className="header">
       <div className="logo">
         <RouterLink to='/' className="logo-link">
-          <img src={logo} alt="منصة الحكيم التعليمية" />
+          <img src={logo} alt="منصة أحمد التعليمية" />
         </RouterLink>
       </div>
       <nav className="nav">
@@ -45,7 +45,7 @@ export const Navbar = () => {
         <div className="close-btn" onClick={toggleSidebar}>
           &times;
         </div>
-        <img src={logo} alt="منصة الحكيم" className="sidebar-logo"/>
+        <img src={logo} alt="منصة الحكيم" className="sidebar-logo"  style={{width: "250px" , height:"100px"}}/>
         <hr />
         <button className="sidebar-button">
           حساب جديد

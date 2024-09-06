@@ -79,72 +79,40 @@
     margin: 20px 0;
 }
 @media screen and (max-width: 768px) {
-    .landing-page {
-      position: relative;
-      padding: 0 10px;
-    }
-  
-    .home-content {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    /* Adjust the animations for smaller screens */
-    .minus-animation, .divide-animation, .multiply-animation, .unequal-animation {
-      opacity: 0.5; /* Reduce opacity slightly for better visibility */
-      z-index: -1;
-    }
-  
-    .minus-animation {
-      top: -50px;
-      left: -50px;
-      width: 100px; /* Scale down the size */
-    }
-  
-    .divide-animation {
-      top: -50px;
-      right: -50px;
-      width: 100px;
-    }
-  
-    .multiply-animation {
-      bottom: -50px;
-      left: 50%;
-      width: 120px;
-      transform: translateX(-50%);
-    }
-  
-    .unequal-animation {
-      top: 50%;
-      right: -50px;
-      width: 100px;
-      transform: translateY(-50%);
-    }
-  
-    .photo-container {
-      width: 250px; /* Smaller photo size */
-      height: 250px;
-    }
-  
-    .firstName, .secondName {
-      font-size: 40px; /* Smaller font size for names */
-    }
-  
-    .home-details p {
-      font-size: 16px; /* Smaller paragraph font size */
-    }
-  
-    .home-details {
-      margin-left: 0;
-      text-align: center; /* Center align text */
-    }
-  
-    .separator {
-      height: 2px; /* Thinner separator */
-      margin: 10px 0; /* Adjust margin */
-    }
+  .landing-page {
+    position: relative;
+    padding: 0 10px; /* Adjust padding for small screens */
   }
-  
 
-  
+  .home-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  .photo-container {
+    width: 250px; /* Smaller photo size */
+    height: 250px;
+  }
+
+  .firstName, .secondName {
+    font-size: 40px; /* Smaller font size for names */
+  }
+
+  .home-details p {
+    font-size: 16px; /* Smaller paragraph font size */
+  }
+
+  .home-details {
+    margin-left: 0;
+    text-align: center; /* Center align text */
+  }
+
+  .separator {
+    height: 2px; /* Thinner separator */
+    margin: 10px 0; /* Adjust margin */
+  }
+}
+
+
