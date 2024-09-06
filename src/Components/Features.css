@@ -2,9 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #037a8a; /* Adjust the background color as needed */
+    background-color: #037a8a;
     padding: 20px;
-    /* border-radius: 20px; */
     margin: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 300px;
@@ -13,7 +12,7 @@
   .image-container {
     flex: 1;
     margin-left: 50px;
-    max-width: 300px; /* Adjust size for the image */
+    max-width: 300px; 
   }
   
   .image-container img {
